@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav_links');
 const openNavBtn = document.querySelector('#nav_toggle-open');
 const closeNavBtn = document.querySelector('#nav_toggle-close');
 
-/*Função para abrir o menu*/
+
 
 const openNav = () => {
     nav.style.display = 'flex';
@@ -12,7 +12,7 @@ const openNav = () => {
 
 openNavBtn.addEventListener('click', openNav)
 
-/*Função para fexar o menu*/
+
 
 const closeNav = () => {
     nav.style.display = 'none';

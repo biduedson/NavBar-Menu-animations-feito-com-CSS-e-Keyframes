@@ -120,6 +120,7 @@ section h1 {
     display: grid;
   }
 }
+
 /*MEDIA QUERIES (responsive disign medium & small screens)*/
 
 @media screen and (max-width: 1024px) {
@@ -148,42 +149,39 @@ section h1 {
 
   /*AQWUI SÃO VALORES INICIAIS DA ANIMAÇÕES*/
 
-  /*.nav_links li {
-        transform: rotate(-90deg) rotateY(90deg);
-        transform-origin: top right;
-        animation: animation1 1s ease forwards;
-        opacity: 0;
+  .nav_links li {
+    transform: rotate(-90deg) rotateY(90deg);
+    transform-origin: top right;
+    animation: animation1 1s ease forwards;
+    opacity: 0;
+  }
+
+  .nav_links li:nth-child(2) {
+    animation-delay: 300ms;
+    transform-origin: top left;
+    transform: rotateZ(90deg) rotateY(-90deg);
+  }
+
+  .nav_links li:nth-child(3) {
+    animation-delay: 600ms;
+  }
+
+  .nav_links li:nth-child(4) {
+    animation-delay: 900ms;
+    transform-origin: top left;
+    transform: rotateZ(90deg) rotateY(-90deg);
+  }
+
+  .nav_links li:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+
+  @keyframes animation1 {
+    to {
+      transform: rotate(0);
+      opacity: 1;
     }
-
-    .nav_links li:nth-child(2) {
-        animation-delay: 300ms;
-        transform-origin: top left;
-        transform: rotateZ(90deg) rotateY(-90deg);
-    }
-
-    .nav_links li:nth-child(3) {
-        animation-delay: 600ms;
-    }
-
-    .nav_links li:nth-child(4) {
-        animation-delay: 900ms;
-        transform-origin: top left;
-        transform: rotateZ(90deg) rotateY(-90deg);
-    }
-
-    .nav_links li:nth-child(5) {
-        animation-delay: 1.2s;
-    }
-
-    
-    @keyframes animation1 {
-        
-        to {
-            transform: rotate(0);
-            opacity: 1;
-
-        }
-    }*/
+  }
 
   /*=======================ANIMATION 2 =======================================*/
 
@@ -266,51 +264,47 @@ section h1 {
   /*AQWUI SÃO VALORES INICIAIS DA ANIMAÇÕES*/
 
   /*.nav_links li {
-        animation: animation4 500ms ease forwards;
-        transform-origin: top;
-        opacity: 0;
+    animation: animation4 500ms ease forwards;
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  .nav_links li:nth-child(2) {
+    animation-delay: 300ms;
+  }
+
+  .nav_links li:nth-child(3) {
+    animation-delay: 600ms;
+  }
+
+  .nav_links li:nth-child(4) {
+    animation-delay: 900ms;
+  }
+
+  .nav_links li:nth-child(5) {
+    animation-delay: 1200ms;
+  }
+
+  @keyframes animation4 {
+    0% {
+      transform: scale(1);
     }
 
-    .nav_links li:nth-child(2) {
-        animation-delay: 300ms;
+    50% {
+      transform: scale(1.1);
     }
 
-    .nav_links li:nth-child(3) {
-        animation-delay: 600ms;
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
-
-    .nav_links li:nth-child(4) {
-        animation-delay: 900ms;
-    }
-
-    .nav_links li:nth-child(5) {
-        animation-delay: 1200ms;
-    }
-
-
-    @keyframes animation4 {
-
-        0% {
-            transform: scale(1);
-
-        }
-
-        50% {
-            transform: scale(1.1);
-
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }*/
+  }*/
 
   /*=======================ANIMATION 4 =======================================*/
 
   /*AQWUI SÃO VALORES INICIAIS DA ANIMAÇÕES*/
 
-  .nav_links {
+  /*.nav_links {
     perspective: none;
   }
 
@@ -342,7 +336,7 @@ section h1 {
       transform: rotate(0);
       opacity: 1;
     }
-  }
+  }*/
 
   .nav_links li a {
     background: var(--color-white);
