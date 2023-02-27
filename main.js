@@ -13,6 +13,7 @@ const openNav = () => {
 openNavBtn.addEventListener('click', openNav)
 
 /*Função para fexar o menu*/
+
 const closeNav = () => {
     nav.style.display = 'none';
     openNavBtn.style.display = 'inline-block';
@@ -21,7 +22,5 @@ const closeNav = () => {
 
 closeNavBtn.addEventListener('click', closeNav)
 
-//const teste = document.querySelector('.body');
 
-
-//teste.addEventListener('click', closeNav)
+window.onresize = function () { location.reload() }
